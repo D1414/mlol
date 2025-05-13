@@ -1,7 +1,5 @@
-require('dotenv').config();
-
 const championGrid = document.getElementById("championGrid");
-const API_KEY = process.env.API_KEY; 
+const API_KEY = "RGAPI-f68bb62b-ed0d-4e16-9dac-85ad4e072d64"
 const API_BASE_URL = "https://europe.api.riotgames.com";
 const ICON_BASE_URL = "https://ddragon.leagueoflegends.com/cdn/15.9.1/img/champion/";
 
