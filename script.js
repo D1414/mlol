@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const championGrid = document.getElementById("championGrid");
 const API_KEY = process.env.API_KEY; 
 const API_BASE_URL = "https://europe.api.riotgames.com";
