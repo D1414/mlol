@@ -1,5 +1,5 @@
 const championGrid = document.getElementById("championGrid");
-const API_KEY = "RGAPI-32c0199c-efb0-4f04-8085-603de799c378";
+const API_KEY = process.env.API_KEY; 
 const API_BASE_URL = "https://europe.api.riotgames.com";
 const ICON_BASE_URL = "https://ddragon.leagueoflegends.com/cdn/15.9.1/img/champion/";
 
