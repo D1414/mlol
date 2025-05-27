@@ -1,8 +1,7 @@
 const championGrid = document.getElementById("championGrid");
-const API_KEY = "RGAPI-361142e7-ec7e-4d7d-a11d-ac72d4426714"
 const API_BASE_URL = "https://europe.api.riotgames.com";
 const ICON_BASE_URL = "https://ddragon.leagueoflegends.com/cdn/15.9.1/img/champion/";
-
+API_KEY = "";
 
 document.getElementById("form").addEventListener("submit", handleFormSubmit);
 
@@ -11,6 +10,7 @@ async function handleFormSubmit(event) {
 
   const username = document.getElementById("username").value;
   const gameTag = document.getElementById("gametag").value;
+  API_KEY = document.getElementById("api_key").value;
 
   championGrid.innerHTML = "";
 
