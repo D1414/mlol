@@ -1,5 +1,5 @@
 const championGrid = document.getElementById("championGrid");
-const API_KEY = "RGAPI-f68bb62b-ed0d-4e16-9dac-85ad4e072d64"
+const API_KEY = "RGAPI-361142e7-ec7e-4d7d-a11d-ac72d4426714"
 const API_BASE_URL = "https://europe.api.riotgames.com";
 const ICON_BASE_URL = "https://ddragon.leagueoflegends.com/cdn/15.9.1/img/champion/";
 
@@ -13,7 +13,7 @@ async function handleFormSubmit(event) {
   const gameTag = document.getElementById("gametag").value;
 
   championGrid.innerHTML = "";
-  
+
   try {
     await getChampionsOfMasteries(username, gameTag);
   } catch (error) {
@@ -63,7 +63,7 @@ async function getChampionsOfMasteries(username, gameTag) {
     championDiv.className = "champion";
 
     let imageStyle = "";
-    if(element['championLevel'] < 5){
+    if (element['championLevel'] < 5) {
       imageStyle = "filter: grayscale(100%); opacity: 0.8;";
     }
     championDiv.innerHTML = `
